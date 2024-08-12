@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de la Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Académica Marvin Minsky</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="cuenta.html">Mi Cuenta</a></li>
+                <li><a href="adquisiciones.html">Adquisiciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="catalogue-section">
+            <h2>Catálogo de Libros</h2>
+            <ul id="catalogue-list">
+                <!-- Lista de libros del catálogo será cargada aquí -->
+            </ul>
+        </section>
+
+        <section id="add-book-section">
+            <h2>Agregar Libro</h2>
+            <form id="add-book-form">
+                <label for="title">Título:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="author">Autor:</label>
+                <input type="text" id="author" name="author" required>
+                <label for="year">Año:</label>
+                <input type="number" id="year" name="year" required>
+                <label for="publisher">Editorial:</label>
+                <input type="text" id="publisher" name="publisher" required>
+                <button type="submit">Agregar Libro</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="catalogo.js"></script> <!-- Reemplaza script.js por catalogo.js -->
+</body>
+</html>

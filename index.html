@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Libros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Académica Marvin Minsky</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="cuenta.html">Mi Cuenta</a></li>
+                <li><a href="adquisiciones.html">Adquisiciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Búsqueda de Libros</h2>
+        <input type="text" id="search-input" placeholder="Buscar libro...">
+        <button onclick="buscarLibro()">Buscar</button>
+        <div id="search-results"></div>
+        <div id="loan-message"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

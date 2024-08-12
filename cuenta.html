@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta del Usuario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Académica Marvin Minsky</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="cuenta.html">Mi Cuenta</a></li>
+                <li><a href="adquisiciones.html">Adquisiciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Libros Prestados</h2>
+            <ul id="loaned-books-list"></ul>
+        </section>
+
+        <section>
+            <h2>Libros Devueltos</h2>
+            <ul id="returned-books-list"></ul>
+        </section>
+
+        <section>
+            <h2>Registro de Préstamos</h2>
+            <ul id="loan-record-list"></ul>
+        </section>
+
+        <section>
+            <h2>Libros Reservados</h2>
+            <ul id="reserved-books-list"></ul>
+        </section>
+
+        <button onclick="resetearDatos()">Resetear</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

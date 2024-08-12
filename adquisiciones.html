@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adquisiciones de la Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Académica Marvin Minsky</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="cuenta.html">Mi Cuenta</a></li>
+                <li><a href="adquisiciones.html">Adquisiciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="new-acquisitions-section">
+            <h2>Nuevas Adquisiciones</h2>
+            <ul id="new-acquisitions-list">
+                <!-- Lista de nuevas adquisiciones será cargada aquí -->
+            </ul>
+        </section>
+
+        <section id="add-acquisition-section">
+            <h2>Agregar Nueva Adquisición</h2>
+            <form id="add-acquisition-form">
+                <label for="acquisition-title">Título:</label>
+                <input type="text" id="acquisition-title" name="acquisition-title" required>
+                <label for="acquisition-author">Autor:</label>
+                <input type="text" id="acquisition-author" name="acquisition-author" required>
+                <label for="acquisition-year">Año:</label>
+                <input type="number" id="acquisition-year" name="acquisition-year" required>
+                <label for="acquisition-publisher">Editorial:</label>
+                <input type="text" id="acquisition-publisher" name="acquisition-publisher" required>
+                <button type="submit">Agregar Adquisición</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="adquisiciones.js"></script>
+</body>
+</html>
